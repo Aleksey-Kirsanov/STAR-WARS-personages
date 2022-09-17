@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background: #020016;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Russo One', sans-serif;
+}
+
+.title{
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.title h1{
+  margin: 5px;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  padding: 0px 20px;
+}
+
+.slide{
+  height: 80vh;
+  border-radius: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 0.2s ease-in;
+}
+
+.slide:hover{
+  box-shadow: 0 0 10px 1px white;
+}
+
+.slide h3{
+  position: absolute;
+  font-size: 20px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide.active{
+flex: 10;
+}
+
+ #slide-1.active{
+  box-shadow: 0 0 10px 5px rgb(16, 9, 113);
+  }
+ #slide-2.active{
+  box-shadow: 0 0 10px 5px rgb(64, 255, 99);
+  }
+ #slide-3.active{
+  box-shadow: 0 0 10px 5px rgb(255, 0, 0);
+  }
+ #slide-4.active{
+  box-shadow: 0 0 10px 5px rgb(168, 168, 168);
+  }
+ #slide-5.active{
+  box-shadow: 0 0 10px 5px rgb(75, 178, 226);
+  }
+
+  #slide-1:hover{
+    size: 1.2;
+  }
+
+.slide.active h3{
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  font-size: 23px;
+}
+
+h1{
+  cursor: pointer;
+}
